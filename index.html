@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<link rel="icon" type="image/svg+xml" href="/logo.svg" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="stylesheet" href="/main.css">
+	<title>Twee Writer</title>
+</head>
+
+<body>
+	<div id="toolbar">
+		<div class="toolbar-row">
+			<div id="title-container">
+				<img src="logo.svg" id="logo" />
+				<h1 id="app-title">Twee Writer</h1>
+			</div>
+			<button id="new-document-button">Create new document</button>
+		</div>
+	</div>
+	<main id="document-listing-container">
+		Saved documents
+		<ol id="document-listing"></ol>
+	</main>
+	<script type="module" src="/src/listing.ts"></script>
+</body>
+
+</html>

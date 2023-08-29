@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<link rel="icon" type="image/svg+xml" href="/logo.svg" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="stylesheet" href="/main.css">
+	<title>Twee Writer</title>
+</head>
+
+<body>
+	<div id="toolbar">
+		<div class="toolbar-row">
+			<div id="title-container">
+				<a href="../" id="back-link">
+					<h1>←</h1>
+				</a>
+				<h1 id="app-title">Twee Writer</h1>
+				<div id="saving-indicator" class="--dirty --hidden"></div>
+			</div>
+			<div id="format-select-container" class="--hidden">
+				<label for="format-select">
+					StoryFormat: 
+					<select id="format-select" name="format-select">
+						<option value="chapbook-1">Chapbook 1</option>
+						<option value="sugarcube-2">SugarCube 2</option>
+						<option value="harlowe-3">Harlowe 3</option>
+					</select>
+				</label>
+				<button id="set-as-default-button">Set as default</button>
+			</div>
+		</div>
+		<div class="toolbar-row">
+			<label for="save-enabled" id="save-enabled-container">
+				<input type="checkbox" name="save-enabled" id="save-enabled" />
+				Save to localStorage?
+			</label>
+			<label for="filename-input" id="filename-input-container">
+				Filename:
+				<input id="filename-input" name="filename-input" type="text" />.tw
+			</label>
+			<button id="download-button">Download</button>
+		</div>
+	</div>
+	<div id="editor-container" class="--loading"></div>
+	<script type="module" src="/src/main.ts"></script>
+</body>
+
+</html>
